@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">PlanIt!</string>
+    <string name="app_tagline">Organiza tu tiempo, organiza tu vida</string>
+    
+    <!-- Pantalla Principal -->
+    <string name="today">Hoy</string>
+    <string name="week">Semana</string>
+    <string name="all">Todas</string>
+    <string name="add_reminder">Agregar recordatorio</string>
+    <string name="no_reminders">No hay recordatorios</string>
+    
+    <!-- Calendario -->
+    <string name="calendar">Calendario</string>
+    
+    <!-- Crear Recordatorio -->
+    <string name="create_reminder">Crear Recordatorio</string>
+    <string name="title">Título</string>
+    <string name="title_hint">Ingresa el título del recordatorio</string>
+    <string name="description">Descripción</string>
+    <string name="description_hint">Agrega una descripción (opcional)</string>
+    <string name="activities">Actividades</string>
+    <string name="add_activity">Agregar actividad</string>
+    <string name="activity_hint">Nueva actividad</string>
+    <string name="date_time">Fecha y Hora</string>
+    <string name="repetition">Repetición</string>
+    <string name="once">Una vez</string>
+    <string name="daily">Diaria</string>
+    <string name="weekly">Semanal</string>
+    <string name="category">Categoría</string>
+    <string name="work">Trabajo</string>
+    <string name="school">Escuela</string>
+    <string name="personal">Personal</string>
+    <string name="sound">Sonido</string>
+    <string name="vibration">Vibración</string>
+    <string name="save">Guardar</string>
+    <string name="cancel">Cancelar</string>
+    
+    <!-- Detalles -->
+    <string name="reminder_details">Detalles del Recordatorio</string>
+    <string name="status">Estado</string>
+    <string name="pending">Pendiente</string>
+    <string name="in_progress">En progreso</string>
+    <string name="completed">Completado</string>
+    <string name="edit">Editar</string>
+    <string name="delete">Eliminar</string>
+    <string name="mark_completed">Marcar como completado</string>
+    <string name="location">Ubicación</string>
+    <string name="location_hint">Ubicación (opcional)</string>
+    
+    <!-- Modo Concentración -->
+    <string name="focus_mode">Modo Concentración</string>
+    <string name="start_timer">Iniciar</string>
+    <string name="pause_timer">Pausar</string>
+    <string name="stop_timer">Detener</string>
+    <string name="focus_completed">¡Tiempo completado!</string>
+    <string name="pending_tasks">Tareas pendientes del día</string>
+    
+    <!-- Notificaciones -->
+    <string name="reminder_notification">Recordatorio</string>
+    <string name="reminder_notification_text">Tienes un recordatorio pendiente</string>
+    
+    <!-- Acciones -->
+    <string name="complete">Completar</string>
+    <string name="snooze">Posponer</string>
+    
+    <!-- Validación -->
+    <string name="title_required">El título es obligatorio</string>
+    <string name="delete_confirmation">¿Estás seguro de eliminar este recordatorio?</string>
+</resources>

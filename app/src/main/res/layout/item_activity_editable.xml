@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edit_activity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="@string/activity_hint"
+        android:inputType="textCapSentences"
+        android:maxLines="1"
+        tools:text="Nueva actividad" />
+
+    <ImageButton
+        android:id="@+id/button_delete_activity"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_vertical"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/delete"
+        android:src="@android:drawable/ic_menu_delete"
+        android:tint="@android:color/holo_red_dark"
+        android:padding="8dp" />
+
+</LinearLayout>
+

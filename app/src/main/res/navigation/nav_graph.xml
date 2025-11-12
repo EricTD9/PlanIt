@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_today">
+
+    <fragment
+        android:id="@+id/nav_today"
+        android:name="com.planit.ui.fragment.ReminderListFragment"
+        android:label="@string/today"
+        tools:layout="@layout/fragment_reminder_list" />
+
+    <fragment
+        android:id="@+id/nav_calendar"
+        android:name="com.planit.ui.fragment.CalendarFragment"
+        android:label="@string/calendar"
+        tools:layout="@layout/fragment_calendar" />
+
+    <fragment
+        android:id="@+id/nav_create"
+        android:name="com.planit.ui.fragment.CreateReminderFragment"
+        android:label="@string/create_reminder"
+        tools:layout="@layout/fragment_create_reminder" />
+
+    <fragment
+        android:id="@+id/nav_focus"
+        android:name="com.planit.ui.fragment.FocusModeFragment"
+        android:label="@string/focus_mode"
+        tools:layout="@layout/fragment_focus_mode" />
+
+    <fragment
+        android:id="@+id/nav_reminder_detail"
+        android:name="com.planit.ui.fragment.ReminderDetailFragment"
+        android:label="@string/reminder_details"
+        tools:layout="@layout/fragment_reminder_detail">
+
+        <argument
+            android:name="reminderId"
+            app:argType="long"
+            android:defaultValue="-1L" />
+
+    </fragment>
+
+</navigation>
+
