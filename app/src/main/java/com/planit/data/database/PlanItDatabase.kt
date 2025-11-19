@@ -7,18 +7,21 @@ import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import com.planit.data.dao.ActivityDao
 import com.planit.data.dao.ReminderDao
+import com.planit.data.dao.ReminderOccurrenceDao
 import com.planit.data.model.ActivityItem
 import com.planit.data.model.Reminder
+import com.planit.data.model.ReminderOccurrence
 
 @Database(
-    entities = [Reminder::class, ActivityItem::class],
-    version = 1,
+    entities = [Reminder::class, ActivityItem::class, ReminderOccurrence::class],
+    version = 2,
     exportSchema = false
 )
 @TypeConverters(Converters::class)
 abstract class PlanItDatabase : RoomDatabase() {
     abstract fun reminderDao(): ReminderDao
     abstract fun activityDao(): ActivityDao
+    abstract fun reminderOccurrenceDao(): ReminderOccurrenceDao
 
     companion object {
         @Volatile

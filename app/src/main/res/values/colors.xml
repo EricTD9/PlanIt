@@ -33,4 +33,6 @@
     
     <!-- Colores de división -->
     <color name="divider">#E0E0E0</color>
+    <!-- Color de fondo para el launcher (adaptive icon) -->
+    <color name="ic_launcher_background">#FFFFFFFF</color>
 </resources>

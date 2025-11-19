@@ -17,7 +17,19 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            // Solo aplicar padding superior, el bottom navigation manejará el inferior
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, 0)
+            
+            // Aplicar padding inferior solo al bottom navigation si es necesario
+            val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_navigation)
+            if (bottomNav != null) {
+                bottomNav.setPadding(
+                    bottomNav.paddingLeft,
+                    bottomNav.paddingTop,
+                    bottomNav.paddingRight,
+                    systemBars.bottom
+                )
+            }
             insets
         }
 

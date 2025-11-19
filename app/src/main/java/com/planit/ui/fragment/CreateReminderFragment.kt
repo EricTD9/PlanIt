@@ -46,6 +46,12 @@ class CreateReminderFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        // Obtener fecha seleccionada si viene del calendario
+        arguments?.getLong("selectedDate", -1L)?.takeIf { it != -1L }?.let { dateTime ->
+            selectedDateTime.timeInMillis = dateTime
+            updateDateTimeText()
+        }
+
         titleEdit = view.findViewById(R.id.edit_title)
         descriptionEdit = view.findViewById(R.id.edit_description)
         dateTimeText = view.findViewById(R.id.text_date_time)
